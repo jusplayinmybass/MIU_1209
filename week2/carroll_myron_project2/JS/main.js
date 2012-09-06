@@ -76,7 +76,7 @@ window.addEventListener("DOMContentLoaded", function () {
             //Same key that was passed from editSubmit event handler
             //to the validate function and then passed here, into the storeData function.
             id = key;
-            alert('Nothing New Here!!!!!!!');
+            
         }
         //Gather up all form field values in an object
         //Object contains an array that contains form label and input value

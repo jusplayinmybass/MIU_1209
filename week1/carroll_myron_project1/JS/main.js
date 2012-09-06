@@ -77,7 +77,7 @@ window.addEventListener("DOMContentLoaded", function () {
             //Same key that was passed from editSubmit event handler
             //to the validate function and then passed here, into the storeData function.
             id = key;
-            alert('Nothing New Here!!!!!!!');
+            
         }
         //Gather up all form field values in an object
         //Object contains an array that contains form label and input value
@@ -139,7 +139,7 @@ window.addEventListener("DOMContentLoaded", function () {
             var imageLi = document.createElement('li');
             makeSubList.appendChild(imageLi);
             var newImg = document.createElement('img');
-            var setSrc = newImg.setAttribute("src", "images/"+ catName +".png");
+            var setSrc = newImg.setAttribute("src", "images/"+ catName +".jpg");
             imageLi.appendChild(newImg);
         }
         //Auto Populate Local Storage
