@@ -30,11 +30,13 @@
             <!--Header with clickable image.-->
             <div data-role="header" data-position="fixed">
                 <a href="additem.html" data-role="button"><img src=Images/musicLessons.jpg></img></a>
-            </div>
+            </div></br>
             
             <!--Search and Browse options-->
             <div data-role="content">
-		<ul data-role="listview" data-filter="true" data-theme="c">
+		<ul data-role="controlgroup" data-filter="true" data-theme="c">
+		    <li></label><input type="text" id="search" placeholder="Search for student"  /></li>
+			<input type="button" value="Search" id="searchBtn" /><br />
 		    <li><a href="#undcon" data-role="button"><h3>Bass_Guitar</h3>
 			 <p>This will take you to the page with the students That study Bass Guitar</p>
                         </a>
@@ -101,6 +103,16 @@
 		
 		
 	    </div>
+	    <!--Footer-->
+	    <div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="star">Home</a></li>
+					<li><a href="#bronze">Bronze App</a></li>
+					<li><a href="#news">News Feed</a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	    
 	<!--Home Page-->
@@ -114,6 +126,16 @@
 		
 		
 	    </div>
+	    <!--Footer-->
+	    <div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="star">Home</a></li>
+					<li><a href="#bronze">Bronze App</a></li>
+					<li><a href="#news">News Feed</a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
         
         <!-- JavaScript under here -->
