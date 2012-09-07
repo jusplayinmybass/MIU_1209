@@ -1,5 +1,5 @@
 // Author: Myron Carroll
-// Title: Assignment 1 JavaScript
+// Title: Assignment 2 JavaScript
 // Class: Mobile Interfaces and Usability
 
 // Wait until the DOM is Ready
@@ -71,7 +71,6 @@ window.addEventListener("DOMContentLoaded", function () {
         //If there is no key, this means this is a brand new item and we need a new key.
         if(!key){
             var id = Math.floor(Math.random()*100000001);
-            alert('This is new!!!!!!!');
         }else{
             //Set the id to the existing key that we are editing so it will save over the data
             //Same key that was passed from editSubmit event handler
