@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--Mobile Interfaces and Usability 1209 Assignment 2-->
+<!--Author: Myron Carroll-->
+<!--Music Student Management App-->
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Music Lessons App</title>
+        <meta name="description" content="An app to manage music students." />
+        <meta name="keywords" content="Bass Lessons, Myron Bennell Carroll, Mobile Interfaces and Usability, Full Sail University" /> <!--These are to let a browser know what keywords this falls under-->
+
+        <!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+
+        <!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+        
+        <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+    </head>
+    <body>
+        <div data-role="page">
+            <!--Header with clickable image.-->
+            <div data-role="header" data-position="fixed">
+                <a href="additem.html" data-role="button"><img src=Images/musicLessons.jpg></img></a>
+            </div></br>
+            
+            <!--Search and Browse options-->
+            <div data-role="content">
+		<ul data-role="controlgroup" data-filter="true" data-theme="c">
+		    <li></label><input type="text" id="search" placeholder="Search for student"  /></li>
+			<input type="button" value="Search" id="searchBtn" /><br />
+		    <li><a href="#undcon" data-role="button"><h3>Bass_Guitar</h3>
+			 <p>This will take you to the page with the students That study Bass Guitar</p>
+                        </a>
+                    </li>
+		    <li><a href="#undcon" data-role="button"><h3>Drums</h3>
+			    <p>This will take you to the page with the students That study Drums</p>
+			</a>
+                    </li>
+		    <li><a href="#undcon" data-role="button"><h3>Guitar</h3>
+			    <p>This will take you to the page with the students That study Guitar</p>
+			</a>
+                    </li>
+		    <li><a href="#undcon" data-role="button"><h3>Piano</h3>
+			    <p>This will take you to the page with the students That study Piano</p>
+			</a>
+                    </li>
+		    <li><a href="#undcon" data-role="button"><h3>Studio</h3>
+			    <p>This will take you to the page with the students That study Studio Recording</p>
+			</a>
+                    </li>
+                    
+		</ul>
+	    </div>
+            
+            
+            <!--footer with Navigation-->
+            <div data-role="footer" data-position="fixed" data-id="home">
+		<div data-role="navbar" data-position="fixed">
+		    <ul>
+			<li><a href="#about" data-icon="star">About</a></li>
+			<li><a href="#https://github.com/jusplayinmybass/MIU_1209/tree/gh-pages/week2">Bronze App</a></li>
+			<li><a href="#http://www.notreble.com">News Feed</a></li>
+		    </ul>
+		</div>
+	    </div>
+            
+            
+        </div>
+        
+        <div data-role="page" id="undcon" data-add-back-btn="true">
+	    <div data-role="header" data-position="fixed">
+		<a href="additem.html" data-role="button"><img src=Images/musicLessons.jpg></img></a>
+		    
+	    </div>
+	    <div data-role="content">
+		<p>"This page is currently under construction."</p>
+	    </div>
+	
+		
+		<div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#about" data-icon="star">About</a></li>
+					<li><a href="#https://github.com/jusplayinmybass/MIU_1209/tree/gh-pages/week2">Bronze App</a></li>
+					<li><a href="#http://www.notreble.com">News Feed</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+        
+	<!--News Feed-->
+	<div data-role="page" id="news" data-add-back-btn="true">
+	    <div data-role="content">
+		
+		
+	    </div>
+	    <!--Footer-->
+	    <div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#about" data-icon="star">About</a></li>
+					<li><a href="#https://github.com/jusplayinmybass/MIU_1209/tree/gh-pages/week2">Bronze App</a></li>
+					<li><a href="#http://www.notreble.com">News Feed</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	    
+	<!--Home Page-->
+	<div data-role="page" id="home" data-add-back-btn="true">
+	    <div data-role="content">
+		<p>"We are dedicated to exposing as many people as possible to the joy of learning to play a musical instrument. "</p>
+		<p>"Our instructors have real world experience as well as formal training. "</p>
+		<p>"So they are able to prepare you for whatever facet of music you choose to pursue. "</p>
+		<p>"Whether you want to jam with your friends or play on the big stage. We can guide you in the right direction"</p>
+		
+		
+		
+	    </div>
+	    <!--Footer-->
+	    <div data-role="footer" data-position="fixed" data-id="home">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#about" data-icon="star">About</a></li>
+					<li><a href="#https://github.com/jusplayinmybass/MIU_1209/tree/gh-pages/week2">GH-Pages</a></li>
+					<li><a href="#http://www.notreble.com">News Feed</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+        
+        <!-- JavaScript under here -->
+	
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+        
+    </body>
+    
+    
+</html>
