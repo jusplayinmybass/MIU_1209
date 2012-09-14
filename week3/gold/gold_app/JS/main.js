@@ -15,7 +15,7 @@ $(document).ready(function(){
             siErrors.click();
             var html= '';
            for (key in validator.submitted){
-                var label = $('label[for^="'+key+'"]');
+                var label = $('label[for^="'+key+'"]').not('[generated]');
                 var legend = label.closest('fieldset').find('ui-controlgroup-label');
                 var fieldname = legend.length ? legend.text() : label.text();
                 html +='<li>'+ fieldname +'</li>';
