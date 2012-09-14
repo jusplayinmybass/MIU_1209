@@ -60,3 +60,11 @@ option {
 	font-style: italic;	
 }
 
+label.error{
+	display: block;
+	margin: 10px 0px;
+	color: #cc0000;
+}
+#siErrors{
+	display: none;
+}
