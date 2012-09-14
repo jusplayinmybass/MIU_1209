@@ -29,8 +29,8 @@
         <div data-role="page">
             <!--Header with clickable image.-->
             <div data-role="header" data-position="fixed">
-                <a href="additem.html" data-role="button"><img src=Images/musicLessons.jpg></img></a>
-            </div></br>
+                <a href="#add" data-role="button"><img src=Images/musicLessons.jpg></img></a>
+            </div>
             
             <!--Search and Browse options-->
             <div data-role="content">
@@ -75,7 +75,7 @@
             
             
         </div>
-        
+	
         <div data-role="page" id="undcon" data-add-back-btn="true">
 	    <div data-role="header" data-position="fixed">
 		<a href="additem.html" data-role="button"><img src=Images/musicLessons.jpg></img></a>
@@ -115,8 +115,8 @@
 		</div>
 	</div>
 	    
-	<!--Home Page-->
-	<div data-role="page" id="home" data-add-back-btn="true">
+	<!--About Page-->
+	<div data-role="page" id="about" data-add-back-btn="true">
 	    <div data-role="content">
 		<p>"We are dedicated to exposing as many people as possible to the joy of learning to play a musical instrument. "</p>
 		<p>"Our instructors have real world experience as well as formal training. "</p>
@@ -137,13 +137,56 @@
 			</div>
 		</div>
 	</div>
+	<!--This will be the form page-->
+	<div data-role="page" id="add" data-add-back-btn="true">
+	    <div data-role="header" data-position="fixed">
+		<a href="additem.html" data-role="button">Student Sign Up Form</a>
+	    </div></br>
+		<form action="" method="post" id="studentInfo">
+		    <div data-role="fieldcontain">
+			<label for="fname">First Name:</label> <!--First Name-->
+			    <input type="text" name="first" id="first" value="" data-mini="true" />
+			<label for="fname" >Last Name:</label><!--Last Name-->
+			    <input type="text" name="last" id="last" value="" data-mini="true" />
+			<label for="email">Email:</label> <!--Email-->
+			    <input type="text" name="email" id="email" value="" data-mini="true" />
+			<label for="date">Birthday:</label> <!--Birthdate-->
+			    <input type="date" name="birthday" id="birthday" value="" data-mini="true" />
+		    </div>
+		    <div data-role="fieldcontain">
+			<label for="select-choice-min" class="select">Shipping method:</label>
+			<select name="select-choice-min" id="select-choice-min" data-mini="true">
+			   <option value="placeholder">--Choose One--</option>
+			   <option value="bass">Bass_Guitar</option>
+			   <option value="drums">Drums</option>
+			   <option value="guitar">Guitar</option>
+			   <option value="piano">Piano</option>
+			   <option value="studio">Studio</option>
+			</select> 
+			<label for="reading">Select slider:</label>
+			    <select name="reading" id="reading" data-role="slider" data-mini="true">
+				    <option value="off">No</option>
+				    <option value="on">Yes</option>
+			    </select>
+			<label for="other">Other:</label>
+			    <textarea name="other" id="other">Any area of your playing that you would like to work on goes here
+			    </textarea>   
+			<label for="time">Years Playing:</label> <!--Years Playing-->
+			<input type="range" name="time" id="time" value="5" min="0" max="40" data-mini="true"/>
+			
+		    </div>
+		</form>
+	    <input type="submit" value="Submit information" theme="d"/>
+	    <input type="reset  " value="Reset" data-inline="true"/>
+	    
+	</div>
         
         <!-- JavaScript under here -->
 	
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-        
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
     
     

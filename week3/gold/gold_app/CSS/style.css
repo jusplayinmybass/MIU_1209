@@ -31,7 +31,7 @@ form {
 }
 
 label {
-	color: #EEE;
+	color: #000;
 	display: inline;
 	text-align: left;
 	background: 3399FF
@@ -39,7 +39,7 @@ label {
 
 div{
 	font-family: Times;
-	color: #EEE;
+	color: #000000;
 	background: #3399FF;
 	display: inline;
 }
@@ -59,3 +59,4 @@ legend {
 option {
 	font-style: italic;	
 }
+
