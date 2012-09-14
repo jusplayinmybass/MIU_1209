@@ -1,5 +1,5 @@
 // Author: Myron Carroll
-// Title: Assignment 2 JavaScript
+// Title: Assignment 3 JavaScript
 // Class: Mobile Interfaces and Usability
 
 // Wait until the DOM is Ready
@@ -19,7 +19,7 @@ $(document).ready(function(){
                 var legend = label.closest('fieldset').find('ui-controlgroup-label');
                 var fieldname = legend.length ? legend.text() : label.text();
                 html +='<li>'+ fieldname +'</li>';
-            },
+            };
             $('#siErrors ul').html(html);
         };
         submithandler: function(){
