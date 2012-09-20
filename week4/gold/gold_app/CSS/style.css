@@ -25,6 +25,7 @@ h1{
 	padding: 10px;
 }
 
+
 form {
 	margin: 10px solid #EEE;
 	background: 3399FF
@@ -40,8 +41,9 @@ label {
 div{
 	font-family: Times;
 	color: #000000;
-	background: #3399FF;
+	background: #808b99;
 	display: inline;
+	background-image: -moz-linear-gradient(67deg, #000 0%, #000 100%);
 }
 
 
@@ -67,4 +69,7 @@ label.error{
 }
 #siErrors{
 	display: none;
+}
+#add{
+	
 }

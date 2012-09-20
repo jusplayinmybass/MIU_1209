@@ -26,14 +26,15 @@
 	<script src="js/libs/modernizr.custom.min.js"></script>
     </head>
     <body>
-        <div data-role="page">
+        <div data-role="page" id="start">
             <!--Header with clickable image.-->
             <div data-role="header" data-position="fixed">
-                <a href="#add" data-role="button"><img src=Images/musicLessons.jpg></img></a>
+                
             </div>
             
             <!--Search and Browse options-->
             <div data-role="content">
+		<a href="#add" data-role="button"><img src=Images/musicLessons.jpg></img></a> <!--Clickable Call To Action-->
 		<ul data-role="controlgroup" data-filter="true" data-theme="c">
 		    <li></label><input type="text" id="search" placeholder="Search for student"  /></li>
 			<input type="button" value="Search" id="searchBtn" /><br />
@@ -100,6 +101,7 @@
 	<!--News Feed-->
 	<div data-role="page" id="news" data-add-back-btn="true">
 	    <div data-role="content">
+		<a href="#add" data-role="button"><img src=Images/musicLessons.jpg></img></a> <!--Clickable Call To Action-->
 		
 		
 	    </div>
@@ -118,6 +120,7 @@
 	<!--About Page-->
 	<div data-role="page" id="about" data-add-back-btn="true">
 	    <div data-role="content">
+		<a href="#add" data-role="button"><img src=Images/musicLessons.jpg></img></a> <!--Clickable Call To Action-->
 		<p>"We are dedicated to exposing as many people as possible to the joy of learning to play a musical instrument. "</p>
 		<p>"Our instructors have real world experience as well as formal training. "</p>
 		<p>"So they are able to prepare you for whatever facet of music you choose to pursue. "</p>
@@ -178,7 +181,7 @@
 		    <a href="#adderrors" id="siErrors" data-rel"dialog" data-transition="pop">Open Errors</a>
 		</form>
 	    <div data-role="fieldcontain">
-		<input type="submit" value="Submit information" data-theme="b"/>
+		<input type="submit" value="Submit information" data-theme="c"/>
 		<input type="reset" value="Reset" data-inline="true" data-mini="true" data-theme="a"/>
 	    </div>
 	    <!--Footer-->
